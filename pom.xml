@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>Eureka-server-erp</artifactId>
+    <artifactId>eureka-server-erp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Eureka-server-erp</name>
-    <description>Eureka-server-erp</description>
+    <name>eureka-server-erp</name>
+    <description>eureka-server-erp</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
@@ -33,6 +33,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,6 +46,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>2.8.8</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
